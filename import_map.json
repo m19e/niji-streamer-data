@@ -1,0 +1,12 @@
+{
+  "imports": {
+    "server": "https://deno.land/std@0.181.0/http/server.ts",
+    "ky": "https://esm.sh/ky@1.1.0",
+    "dom": "https://deno.land/x/deno_dom@v0.1.37/deno-dom-wasm.ts",
+    "/consts/": "./consts/",
+    "/types/": "./types/",
+    "/utils/": "./utils/",
+    "/mods/": "./mods/",
+    "/docs/": "./docs/"
+  }
+}
