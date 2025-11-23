@@ -15,15 +15,6 @@ scripts:
       - net
       - write
 
-  server:
-    desc: Starts local server
-    cmd: server.ts
-    watch: true
-    allow:
-      - read
-      - net
-      - env
-
   update:
     desc: Update panels
     cmd: main.ts --lock=deno.lock --lock-write && deno fmt docs
