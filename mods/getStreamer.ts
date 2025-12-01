@@ -33,6 +33,7 @@ function parseList(ul: Element): any[] {
       // li直下テキストを抽出
       const list = Array.from(li.childNodes)
         .filter((n) => n.nodeType === 3 || n.nodeType === 1) // TEXT_NODE, ELEMENT_NODE
+        .filter((n) => !isElement(n) || n.tagName !== "UL") // ul除外
         .map((n) => n.textContent?.trim());
 
       const title = childUl ? list[0] : list.join("");
